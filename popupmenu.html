@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popupmenu.css"/>
+</head>
+
+<body>
+  <div id="popup-content">
+    <div class="i18n button" id="about"></div>
+    <div class="i18n button" id="quick"></div>
+    <div class="i18n button" id="settings"></div>
+    <div class="i18n button" id="auto_alerts"></div>
+    <div class="button travhide" id="copy_board" data-action="toggleCopyboard"><span class="i18n"></span> 
+		<span class="altkey">Alt+H</span></div>
+    <div class="button travhide" id="dd_bsol" data-action="dd_bsol"><span class="i18n"></span>
+		<span class="altkey">Alt+D</span></div>
+    <div class="button travhide" id="board_pbn" data-action="createpbn"><span class="i18n"></span>
+		<span class="altkey">Alt+P</span></div>
+    <div class="button travhide" id="real_names" data-action="toggleNameDisplay"><span class="i18n"></span> 
+		<span class="altkey">Alt+N</span></div>
+	<div class="link" id="my_hands"><a class="i18n" href="https://www.bridgebase.com/myhands/" target="_blank"></a></div>
+	
+	<hr class="divider io">
+    
+	<div class="button bbo io" id="save_traffic" data-action="savetraffic"><span class="i18n"></span>
+		<span class="altkey">Alt+L</span></div>
+    <div class="button io" id="export_timing" data-action="exportstorage"><span class="i18n"></span>
+		<span class="altkey hotkeyhint">Alt+E</span></div>
+    <div class="button io" id="import_timing" data-action="importstorage"><span class="i18n"></span>
+		<span class="altkey hotkeyhint">Alt+I</span></div>
+  </div>
+
+  <script type="application/javascript" src="popupmenu.js"></script>
+
+</body>
+
+</html>

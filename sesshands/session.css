@@ -1,0 +1,76 @@
+body { 
+	margin: 0.8em 0.4em 0.8em 0.8em;
+	font-size: 14pt;
+	font-family: san-serif;	
+}
+p { max-width: 40em; }
+h1 { font-size: 150%; }
+label { margin-left: 0.4em; }
+#options { margin-bottom: 2em; }
+
+.warn { color: red; }
+.prefname { font-weight: bold; color: #5500FF; }
+
+.username { font-weight: bold; color: #00f; }
+
+.bh-board { margin-bottom: 2em; padding: 0.2em; break-inside: avoid; }
+
+/* Vertical alignment options */
+.vmid { vertical-align: middle; }
+.vtop { vertical-align: top; }
+
+/* Display of hands */
+.pname { background-color: #d3d3d3; padding: 0 0.2em 0 0.2em; }
+.hand { letter-spacing: 0.2em; }
+.hsym { display: inline-block; width: 1em; text-align: center; }
+.ten { letter-spacing: 0; }
+
+/* Score and traveller, BBO Handviewer, BSOL links */
+.bh-score-links { padding-left: 0.7em; }
+.bh-score { margin-bottom: 0.3em; font-weight: bold; }
+
+/* Double dummy table */
+.ddseat { border: none; font-weight: bold; }
+.dd { border: 1px solid #444; }
+
+/* Increase size of double dummy table suit symbols but not NT 
+   First child is empty <td> over the seat club. So this affected
+   clubs, diamonds, hearts, and spades in that order. */
+.bh-dd thead td:nth-child(2) span { font-size: 120%; }
+.bh-dd thead td:nth-child(3) span { font-size: 140%; }
+.bh-dd thead td:nth-child(4) span { font-size: 120%; }
+.bh-dd thead td:nth-child(5) span { font-size: 130%; }
+
+/* Par contract */
+.par { font-weight: bold; }
+
+.hcp { font-size: 80%; text-align: center; }
+
+/* Table cell that holds contract and sometimes raw score and/or HCP table
+   sps (small space) and spl (large space) control vertical separation. */
+.bh-td-contract { text-align: center; vertical-align: middle; }
+.bh-contract { font-size: 120%; font-weight: bold; }
+.bh-rawscore { font-weight: bold; }
+.sps { margin-bottom: 0.2em; }
+.spl { margin-bottom: 0.5em; }
+
+/* Display of card play table */
+.bh-cardplay {
+	text-align: center; padding: 0; border-collapse: collapse;
+	border: solid; border-width: 1px; border-color: #808080;
+}
+.bh-cardplay thead { font-weight: bold; background-color: #c0c0c0; }
+.leader { background-color: #ccffcc; }
+.cd { border-right: none; margin-right: 0; }
+.tm { border-left: none; margin-left: 0; text-align: left; font-size: 70%; vertical-align: 100%; }
+.timesum, .claim { border: solid; border-width: 1px; border-color: #808080; }
+
+/* Auction table */
+.alert { background-color: #ffce00; }
+.tma { border-left: none; margin-left: 0; text-align: left; font-size: 70%; vertical-align: 100%; }
+
+/* Time flagging for auction and card play tables */
+.insta { background-color: #aaffff; }
+.BIT { background-color: #ffd47f; }
+.longBIT { background-color: #ff7f7f; }
+.infinity { background-color: red; }

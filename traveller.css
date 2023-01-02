@@ -1,0 +1,142 @@
+h1 { font-size: 200%; text-align: center; }
+
+/* Render the suits symbols bigger because they are a bit small relatvie to
+   the rest of the characters in the font but adjust line-height so that text
+   with suit symbols does not get spaced more than text without */
+
+/* Two color suits */
+.cs2 { font-size: 110%; line-height: 90%; color: black }
+.ds2 { font-size: 110%; line-height: 90%; color: red; }
+.hs2 { font-size: 110%; line-height: 90%; color: red; }
+.ss2 { font-size: 110%; line-height: 90%; color: black; }
+
+/* Four color suits */
+.cs4 { font-size: 110%; line-height: 90%; color: #40813f; }
+.ds4 { font-size: 110%; line-height: 90%; color: #e86e23; }
+.hs4 { font-size: 110%; line-height: 90%; color: red; }
+.ss4 { font-size: 110%; line-height: 90%; color: #2c399f; }
+
+/* Explanation tooltip (for calls with alerts) */
+#explaintp {
+	position: absolute;
+	border: solid 1px #888;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	background: #fff; color: black;
+	width: 12em;
+	font-size: 100%;
+	font-family: sans-serif;
+	word-wrap: break-word;
+}
+
+#explaintpTitle {
+	text-decoration: underline;
+	margin-bottom: 0.15em;
+}
+#explaintpHint {
+	text-decoration: underline;
+	margin-top: 0.3em;
+	margin-bottom: 0.15em;
+}
+
+/* Explanations that require more than one line will appear to indent on wrapping */
+#explanations { margin-left: 1em }
+.exp { margin-left: -1em }
+
+.expcnt { color: blue; }
+.abb { font-weight: bold; color: blue; }
+#explaintpContent a:link { color: purple; }
+#explaintpContent a:visited { color: blue; }
+#explaintpContent a:hover { color: red; }
+
+.exp-indicator {
+	height: 0.5em;
+	width: 0.5em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.tourneyScoreWider { width : 4em; }
+
+/* For lead column added to the original Traveller table (and its sorted version) */
+.leadcol { width : 1.8em; }
+
+.ac { text-align: left; padding-left: 0.5em; }
+.right { text-align: right; }
+
+#auctionSorted { margin-top: 2em; margin-bottom: 1em; }
+
+/* Contract frequencies table */
+#contracts { 
+	background-color: beige; margin-bottom: 1em; font-size: 150%; 
+	text-align: left; border: 1px solid #9f9f9f;
+}
+#contracts td { vertical-align: top; }
+#contracts .cnt-header { text-align: right; padding-right: 0.1em; }
+#contracts .pct-header { text-align: right; padding-right: 0.6em; }
+#contracts .col-contract { width: 3.3em; }
+#contracts .col-cnt { width: 1.7em; }
+#contracts .col-pct { width: 3.2em; }
+/* See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col */
+#contracts td:nth-child(1) { padding-left: 0.3em; }
+#contracts td:nth-child(2) { text-align: right; }
+#contracts td:nth-child(3) { text-align: right; padding-right: 0.6em; }
+#contracts td:nth-child(4) { padding-right: 0.3em; white-space: normal; 
+	max-width: 36em; }
+#contracts .cnt { color: blue; margin-left: 0.05em; }
+#contracts .ps { color: rgb(0, 100, 0); }
+#contracts .ns { color: red; }
+#contracts .leadgroup { color: rgb(184, 16, 188); font-weight: bold; padding-left: 0.5em; }
+
+.shannonURL { text-decoration: none; color: #0067A5; }
+.shannon { float: right; margin-left: 1em; }
+
+/* Auction frequencies table */
+#auctions { 
+	background-color: beige; margin-bottom: 1em; font-size: 150%;
+	text-align: left; border: 1px solid #9f9f9f;
+}
+#auctions td { vertical-align: top; }
+#auctions .cnt-header { text-align: right; padding-right: 1em; }
+#auctions .col-cnt { width: 4em; }
+#auctions .col-auction { width: 20em; white-space: normal; }
+/* See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col */
+#auctions td:nth-child(1) { padding-left: 0.3em; }
+#auctions td:nth-child(2) { text-align: right; padding-right: 1em; }
+#auctions td:nth-child(3) { padding-right: 0.3em; white-space: normal; max-width: 20em; }
+#auctions .cnt { color: blue; margin-left: 0.05em; }
+#auctions .ps { color: rgb(0, 100, 0); }
+#auctions .ns { color: red; }
+
+/* Principal variants table */
+#principalvariants { 
+	border: 1px solid #9f9f9f; margin-bottom: 1em; font-size: 120%; 
+	margin-left: auto; margin-right: auto;
+	background-color: beige;
+}
+#principalvariants .title { font-size: 125%; }
+.variants {
+	background-color: beige;
+	border-collapse: collapse;
+	border-style: hidden;
+}
+.variants td { 
+	vertical-align: top; text-align: left; font-size: 100%;
+	border: 0.5em solid beige;
+	padding: 0;
+}
+.variants td .continuations { white-space: normal; }
+.variants td .continuations .cnt { color: blue; }
+.variants .tdcall {
+	background-color: #eee;
+}
+.variants .call { 
+	background-color: #eee; border: 1px solid #777;
+	padding: 0.2em 0.3em 0.2em 0.3em;
+	position: relative;
+}
+.variants .ap { 
+	background-color: #cee; border: 1px solid #777;
+	padding: 0.2em 0.3em 0.2em 0.3em;
+}
+.or { margin-left: 0.4em; margin-right: 0.4em; }

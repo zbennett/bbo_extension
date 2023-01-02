@@ -1,0 +1,558 @@
+{
+	"about_slogan": {
+	  "message": "Taking BBO to the next level",
+	  "description": "Taking BBO to the next level"
+	},
+
+	"about_viewdoc": {
+	  "message": "View Online Documentation",
+	  "description": "View Online Documentation"
+	},
+
+	"menu_about": {
+	  "message": "About BBO Helper",
+	  "description": "About BBO Helper"
+	},
+	
+	"menu_quick": {
+	  "message": "Quick Settings",
+	  "description": "Quick Settings"
+	},
+
+	"menu_settings": {
+	  "message": "Edit All Settings",
+	  "description": "Edit All Settings"
+	},
+	
+	"menu_auto_alerts": {
+	  "message": "Define Auto Alerts",
+	  "description": "Define Auto Alerts"
+	},
+	
+	"menu_copy_board": {
+	  "message": "Copy Board as HTML",
+	  "description": "Copy Board as HTML"
+	},
+
+	"menu_dd_bsol": {
+	  "message": "Double Dummy (BSOL)",
+	  "description": "Double Dummy (BSOL)"
+	},
+
+	"menu_board_pbn": {
+	  "message": "Save Board as PBN",
+	  "description": "Save Board as PBN"
+	},
+
+	"menu_real_names": {
+	  "message": "Toggle Real Names",
+	  "description": "Toggle Real Names"
+	},
+	
+	"menu_my_hands": {
+	  "message": "Open BBO My Hands",
+	  "description": "Open BBO My Hands"
+	},
+	
+	"menu_save_traffic": {
+	  "message": "Save BBO Traffic",
+	  "description": "Save BBO Traffic"
+	},
+	
+	"menu_export_timing": {
+	  "message": "Export Timing Data",
+	  "description": "Export Timing Data"
+	},
+	
+	"menu_import_timing": {
+	  "message": "Import Timing Data",
+	  "description": "Import Timing Data"
+	},
+	
+	"qs_title": {
+	  "message": "BBO Helper Quick Settings",
+	  "description": "BBO Helper Quick Settings"
+	},
+	
+	"qs_appShowAuctionClock": {
+	  "message": "Show auction clock",
+	  "description": "Show auction clock"
+	},
+
+	"qs_appShowPlayClock": {
+	  "message": "Show card play timing",
+	  "description": "Show card play timing"
+	},
+
+	"qs_boardShowTiming": {
+	  "message": "Show timing on board copy HTML",
+	  "description": "Show timing on board copy HTML"
+	},
+	
+	"qs_suitFourColor": {
+	  "message": "Four color suits on board copy HTML",
+	  "description": "Four color suits on board copy HTML"
+	},
+	
+	"qs_appShowPeopleTooltip": {
+	  "message": "Show name tooltip in people tab",
+	  "description": "Show name tooltip in people tab"
+	},
+
+	"qs_appAutoAlerts": {
+	  "message": "Enable auto alerts",
+	  "description": "Enable auto alerts"
+	},
+
+	"qs_appChatAutoSuits": {
+	  "message": "Enable auto chat suit symbols",
+	  "description": "Enable auto chat suit symbols"
+	},
+
+	"qs_showddBBO": {
+	  "message": "Show double dummy table in BBO",
+	  "description": "Show double dummy table in BBO"
+	},
+	
+	"qs_showddHV": {
+	  "message": "Show double dummy table in Hand Viewer",
+	  "description": "Show double dummy table in Hand Viewer"
+	},	
+	
+	"qs_appDoubleDummyTricks": {
+	  "message": "Double dummy shows tricks (not contracts)",
+	  "description": "Double dummy shows tricks (not contracts)"
+	},
+	
+	"options_section_app": {
+	  "message": "BBO application options",
+	  "description": "BBO application options"
+	},
+
+	
+	"options_appShowAuctionClock": {
+	  "message": "Show time taken for last call in lower right corner of the auction box",
+	  "description": "Show time taken for last call in lower right corner of the auction box"
+	},
+
+	"options_appShowPlayClock": {
+	  "message": "Show time required to play each card in trick",
+	  "description": "Show time required to play each card in trick"
+	},
+
+	"options_appDoubleDummyMode": {
+	  "message": "Show double dummy table, par, and par contract(s) in History pane",
+	  "description": "Show double dummy table, par, and par contract(s) in History pane"
+	},
+	
+	"options_hvDoubleDummyMode": {
+	  "message": "Show double dummy table etc in standalone BBO Hand Viewer",
+	  "description": "Show double dummy table etc in standalone BBO Hand Viewer"
+	},
+
+	"options_appDoubleDummyTricks": {
+	  "message": "Double dummy table shows tricks instead of contracts",
+	  "description": "Double dummy table shows tricks instead of contracts"
+	},
+	
+	"options_appAutoAlerts": {
+	  "message": "Enable Auto Alerts (configure alerts separately)",
+	  "description": "Enable Auto Alerts (configure alerts separately)"
+	},
+	
+	"options_appAlertSubstitutions": {
+	  "message": "Enable alert substitutions",
+	  "description": "Enable alert substitutions"
+	},
+	
+	"options_appChatNameSubs": {
+	  "message": "Enable !w, !n, !e, and !t name substitutions in chat window",
+	  "description": "Enable !w, !n, !e, and !t name substitutions in chat window"
+	},
+	
+	"options_appChatAutoSuits": {
+	  "message": "Automatically insert ! for cards, bids, and suits in chat window",
+	  "description": "Automatically insert ! for cards, bids, and suits in chat window"
+	},
+	
+	"options_appClaimAutoSuits": {
+	  "message": "Automatically insert ! for cards, bids, and suits in claim window",
+	  "description": "Automatically insert ! for cards, bids, and suits in claim window"
+	},
+	
+	"options_appShowPeopleTooltip": {
+	  "message": "Show real name tooltip in People tab (friends, hosts, stars, ignores)",
+	  "description": "Show real name tooltip in People tab (friends, hosts, stars, ignores)"
+	},
+
+	"options_appBoardLocalization": {
+	  "message": "Use local language for board display rather than English",
+	  "description": "Use local language for board display rather than English"
+	},
+
+	"options_sessDoubleDummyAlways": {
+	  "message": "Always include double dummy table in session HTML (even if not cached)",
+	  "description": "Always include double dummy table in session HTML (even if not cached)"
+	},
+
+	"options_travSuitFourColor": {
+	  "message": "Use four colors for the suits in the traveller display",
+	  "description": "Use four colors for the suits in the traveller display"
+	},
+	
+	
+	"options_section_cards": {
+	  "message": "Card, Bid, and Suit appearance",
+	  "description": "Card, Bid, and Suit appearance"
+	},
+	
+	"options_cardUse10": {
+	  "message": "Use 10 instead of T for displaying tens.",
+	  "description": "Use 10 instead of T for displaying tens."
+	},	
+
+	"options_handVoidmdash": {
+	  "message": "Indicate void suits with $MDASH$",
+	  "description": "Indicate void suits with $MDASH$",
+	  "placeholders": { "mdash": { "content": "\u2014" } }
+	},
+	
+	"options_suitFourColor": {
+	  "message": "Use four colors for the suits (the colors are similar to bidding box colors)",
+	  "description": "Use four colors for the suits (the colors are similar to bidding box colors)"
+	},
+	
+	"options_suitForceBlack": {
+	  "message": "Explicitly set color of spades and clubs to black in HTML output. If not<br>checked, color will match foreground color of embedding document",
+	  "description": "Explicitly set color of spades and clubs to black in HTML output. If not<br>checked, color will match foreground color of embedding document"
+	},
+
+	
+	"options_section_board_full": {
+	  "message": "Full Board Copy display",
+	  "description": "Full Board Copy display"
+	},
+
+	"options_boardIncludeBorder": {
+	  "message": "Include bounding box (one pixel grey border)",
+	  "description": "Include bounding box (one pixel grey border)"
+	},
+
+	"options_boardShowTiming": {
+	  "message": "Show timing (if available) in auction box and card play table",
+	  "description": "Show timing (if available) in auction box and card play table"
+	},
+	
+	"options_boardIncludeNames": {
+	  "message": "Include player handles / seat names. Use: ",
+	  "description": "Include player handles / seat names. Use: "
+	},
+
+	"options_boardPlayerNameMode": {
+	  "message": "Label seats with: ",
+	  "description": "Label seats with: "
+	},
+	
+	"options_boardShowAuction": {
+	  "message": "Include auction",
+	  "description": "Include auction"
+	},	
+
+	"options_boardShowContract": {
+	  "message": "Include contract",
+	  "description": "Include contract"
+	},
+
+	"options_boardShowHCP": {
+	  "message": "Include high card point (HCP) diagram",
+	  "description": "Include high card point (HCP) diagram"
+	},
+
+	"options_boardShowDateTime": {
+	  "message": "Include date and time of event (if available)",
+	  "description": "Include date and time of event (if available)"
+	},
+	
+	"options_boardShowDoubleDummy": {
+	  "message": "Include double dummy table, par, and par contract(s)",
+	  "description": "Include double dummy table, par, and par contract(s)"
+	},
+
+	"options_boardShowPlay": {
+	  "message": "Include table of card play (if available)",
+	  "description": "Include table of card play (if available)"
+	},
+
+	"options_boardShowExplanations": {
+	  "message": "Include explanations of any explained bids (if any)",
+	  "description": "Include explanations of any explained bids (if any)"
+	},
+
+	"options_boardHideRobotExplanations": {
+	  "message": "Hide robot bidding explanations",
+	  "description": "Hide robot bidding explanations"
+	},
+	
+	"options_boardShowLinks": {
+	  "message": "Include BBO Viewer and Bridge Solver links",
+	  "description": "Include BBO Viewer and Bridge Solver links"
+	},
+
+	"options_boardLinksTargetBlank": {
+	  "message": "Links open in a new page $TARGET$",
+	  "description": "Links open in a new page $TARGET$",
+	  "placeholders": { "target": { "content": "(target=\"_blank\")" } }
+	},
+	
+	
+	"options_section_board_partial": {
+	  "message": "Partial Board Copy display",
+	  "description": "Partial Board Copy display"
+	},
+	
+	"options_boardPartialShowBoardNumber": {
+	  "message": "Include board number",
+	  "description": "Include board number"
+	},
+	
+	"options_boardPartialShowContract": {
+	  "message": "Include contract",
+	  "description": "Include contract"
+	},
+	
+	
+	"options_section_auction": {
+	  "message": "Auction display",
+	  "description": "Auction display"
+	},
+	
+	"options_auctionTextNT": {
+	  "message": "Use NT instead N for notrump bids",
+	  "description": "Use NT instead N for notrump bids"
+	},
+	
+	"options_auctionShortCalls": {
+	  "message": "Use short calls (P, X, XX) instead of Pass, Dbl, and Rdbl",
+	  "description": "Use short calls (P, X, XX) instead of Pass, Dbl, and Rdbl"
+	},
+	
+	"options_auctionSeatLetters": {
+	  "message": "Use seat letters (S, W, N, E) instead of seat names",
+	  "description": "Use seat letters (S, W, N, E) instead of seat names"
+	},
+	
+	"options_auctionHideFinalPasses": {
+	  "message": "Don't include the final three passes (more compact display)",
+	  "description": "Don't include the final three passes (more compact display)"
+	},
+	
+	"options_auctionBBOstyling": {
+	  "message": "Style the auction box similar to BBO",
+	  "description": "Style the auction box similar to BBO"
+	},
+	
+
+	"options_section_timing": {
+	  "message": "Time flagging thresholds",
+	  "description": "Time flagging thresholds"
+	},
+	
+	"options_timingInstantAction": {
+	  "message": "Insta-action threshold (seconds)",
+	  "description": "Insta-action threshold (seconds)"
+	},		
+	
+	"options_timingBIT": {
+	  "message": "Break in tempo (BIT) threshold (seconds)",
+	  "description": "Break in tempo (BIT) threshold (seconds)"
+	},		
+	
+	"options_timimgLongBIT": {
+	  "message": "Long break in tempo threshold (seconds)",
+	  "description": "Long break in tempo threshold (seconds)"
+	},		
+			
+	
+	"options_section_traffic": {
+	  "message": "Traffic Logging (advanced)",
+	  "description": "Traffic Logging (advanced)"
+	},
+	
+	"options_appTrafficLogging": {
+	  "message": "Enable web request and websocket traffic logging",
+	  "description": "Enable web request and websocket traffic logging"
+	},
+	
+	"options_appTrafficLogFeed": {
+	  "message": "Include <sc_feed> messages (friend logins, VuGraph announcements, etc)",
+	  "description": "Include <sc_feed> messages (friend logins, VuGraph announcements, etc)"
+	},
+	
+	"options_appTrafficLoggingFull": {
+	  "message": "Log everything, including pings, keepalives, and lang.php request",
+	  "description": "Log everything, including pings, keepalives, and lang.php request"
+	},
+	
+	"options_appTrafficLogHidePassword": {
+	  "message": "Replace BBO password with 8 asterisks (best if sharing traffic logs)",
+	  "description": "Replace BBO password with 8 asterisks (best if sharing traffic logs)"
+	},
+	
+	"options_appTrafficMaxKilobytes": {
+	  "message": "Log limit (KB), zero means unlimited",
+	  "description": "Log limit (KB), zero means unlimited"
+	},
+	
+
+	"alert_section_opening": {
+	  "message": "Opening Bids",
+	  "description": "Opening Bids"
+	},
+
+	"alert_section_nt_responses": {
+	  "message": "Responses to an opening 1NT",
+	  "description": "Responses to an opening 1NT"
+	},
+	
+	"alert_section_responses": {
+	  "message": "Non-competitive responses",
+	  "description": "Non-competitive responses"
+	},
+	
+	"alert_section_nt_defense": {
+	  "message": "Direct seat defense to a 1NT opening",
+	  "description": "Direct seat defense to a 1NT opening"
+	},
+	
+	"alert_section_other": {
+	  "message": "Other scenarios",
+	  "description": "Other scenarios"
+	},
+	
+	"alert_define_your_alerts": {
+		"message": "Define your automatic alerts. If a text box below is left empty, no auto alert will be made. Use the standard BBO !c, !d, !h, !s notations for the club, diamond, heart, and spade suit symbols respectively. These will be replaced with $CDH_HTML$, and $S_HTML$. For example, “!c+!d 5-5 or better”, will be alerted as, “♣+♦, 5-5 or better”. BBO limits alerts to 39 characters.",
+		"description": "Define your automatic alerts. If a text box below is left empty, no auto alert will be made. Use the standard BBO !c, !d, !h, !s notations for the club, diamond, heart, and spade suit symbols respectively. These will be replaced with $CDH_HTML$, and $S_HTML$. For example, “!c+!d 5-5 or better”, will be alerted as, “♣+♦, 5-5 or better”. BBO limits alerts to 39 characters.",
+		"placeholders": {
+			"cdh_html": { "content": "&clubs;, <span class=\"ds\">&diams;</span>, <span class=\"hs\">&hearts;</span>" },			
+			"s_html": { "content": "&spades;" }
+		}
+	},
+	
+	"alert_auto_alert_occurs": {
+	  "message": "When an auto alert occurs, the user is notified by a brief popup. Owing to limitations on how well BBO Helper can integrate with the BBO application, the auto alert will not otherwise show up on your screen. Nonetheless, it is communicated to your opponents, shows up in the History pane later, and is otherwise be included in the permanent record of the hand. If an auto alert is incorrect, you may change it by providing an explanation in the usual manner.",
+	  "description": "When an auto alert occurs, the user is notified by a brief popup. Owing to limitations on how well BBO Helper can integrate with the BBO application, the auto alert will not otherwise show up on your screen. Nonetheless, it is communicated to your opponents, shows up in the History pane later, and is otherwise be included in the permanent record of the hand. If an auto alert is incorrect, you may change it by providing an explanation in the usual manner."
+	},
+	
+	"alert_remember_save": {
+	  "message": "Remember to save any changes before closing this window.",
+	  "description": "Remember to save any changes before closing this window."
+	},
+
+	"alert_full_disclosure": {
+		"message": "Auto Alerts simplify full disclosure. Please take advantage of this functionality. For example, if you systematically have 4+ diamonds when you open 1$D_HTML$ except when you have 4=4=3=2 shape, indicate this with, “4+ cd, unless 4=4=3=2”.",
+		"description": "Auto Alerts simplify full disclosure. Please take advantage of this functionality. For example, if you systematically have 4+ diamonds when you open 1$D_HTML$ except when you have 4=4=3=2 shape, indicate this with, “4+ cd, unless 4=4=3=2”.",
+		"placeholders": { "d_html": { "content": "<span class=\"ds\">&diams;</span>" }
+		}
+	},
+	
+	"traveller_auction_sorted": {
+	  "message": "Auction sorted",
+	  "description": "Auction sorted"
+	},
+	
+	"traveller_contract_freq": {
+	  "message": "Contract frequencies",
+	  "description": "Contract frequencies"
+	},	
+
+	"traveller_auction_freq": {
+	  "message": "Auction frequencies",
+	  "description": "Auction frequencies"
+	},
+	
+	"traveller_pav": {
+	  "message": "Principal Auction Variants",
+	  "description": "Principal Auction Variants"
+	},
+
+	"download_pbn": {
+	  "message": "Download PBN",
+	  "description": "Download PBN"
+	},
+	
+	"download_in_progress": {
+	  "message": "A download is already in progress.",
+	  "description": "A download is already in progress."
+	},
+	
+	"fetching_LIN": {
+	  "message": "Fetching LIN records for each board",
+	  "description": "Fetching LIN records for each board"
+	},
+	
+	"LIN_boards_fetched": {
+	  "message": "LIN board records fetched",
+	  "description": "LIN board records fetched"
+	},	
+	
+	"preparing_PBN": {
+	  "message": "Preparing PBN file",
+	  "description": "Preparing PBN file"
+	},
+	
+	"player_names": {
+	  "message": "Player Names",
+	  "description": "Player Names"
+	},
+
+	"no_ABCL_players": {
+	  "message": "No known ACBL players for field strength estimation",
+	  "description": "No known ACBL players for field strength estimation"
+	},
+	
+	"copy_aid": {
+	  "message": "Board Copy-and-Paste Aid",
+	  "description": "Board Copy-and-Paste Aid"
+	},
+
+	"copy_aid_instructions_Firefox": {
+	  "message": "Select all with 5th button, then",
+	  "description": "Select all with 5th button, then"
+	},
+
+	"copy_aid_instructions_Chrome": {
+	  "message": "Copy to clipboard with 5th button",
+	  "description": "Copy to clipboard with 5th button"
+	},
+	
+	"board_selected": {
+	  "message": "Board selected. Press",
+	  "description": "Board selected. Press"
+	},
+	
+	"to_copy_to_clipboard": {
+	  "message": "to copy to clipboard",
+	  "description": "to copy to clipboard"
+	},
+
+	"board_copy_text": {
+	  "message": "Board HTML copied to clipboard as text",
+	  "description": "Board HTML copied to clipboard as text"
+	},
+	
+	"board_copy_HTML": {
+	  "message": "Board copied to the clipboard",
+	  "description": "Board copied to the clipboard"
+	},
+	
+	"board_copy_failed": {
+	  "message": "Board HTML copy to clipboard failed.",
+	  "description": "Board HTML copy to clipboard failed."
+	},
+	
+	"explanations": {
+	  "message": "Explanations",
+	  "description": "Explanations"
+	}
+	
+}

@@ -1,0 +1,31 @@
+/* Stylesheet for the popup menu */
+
+body {
+	background-color: beige;
+	font-family: Verdana, sans-serif;
+}
+
+.altkey {
+	width: 2.8em;
+	padding-left: 0.6em;
+	float: right;
+}
+
+.button, .link {
+	padding: 4px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.link a:link, .link a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.button:hover, .link:hover {
+	background-color: rgb(128, 255, 255);
+}
+
+.divider {
+	border-top: 1px dashed #777;
+}

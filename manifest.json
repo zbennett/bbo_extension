@@ -1,0 +1,130 @@
+{
+  "manifest_version": 2,
+  "name": "BBO Helper",
+  "version": "1.4.2",
+  "description": "Adds functionally to Bridge Base Online (BBO) website",
+  "developer": {
+    "name": "Matthew Kidd"
+  },
+  "homepage_url": "https://lajollabridge.com/Software/BBO-Helper/",
+  "default_locale": "en",
+  "incognito": "spanning",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bbohelper@triplesqueeze.com"
+    }
+  },
+  "icons": {
+    "96": "icons/B++96.png",
+    "48": "icons/B++48.png",
+    "32": "icons/B++32.png",
+    "24": "icons/B++24.png",
+    "16": "icons/B++16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.bridgebase.com/myhands/hands.php?username=*"
+      ],
+      "css": [
+        "global.css",
+        "hands.css"
+      ],
+      "js": [
+        "FileSaver.js",
+        "common.js",
+        "hands.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.bridgebase.com/myhands/hands.php?traveller=*"
+      ],
+      "css": [
+        "global.css",
+        "traveller.css"
+      ],
+      "js": [
+        "FileSaver.js",
+        "common.js",
+        "traveller.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.bridgebase.com/tools/handviewer.html*"
+      ],
+      "css": [
+        "global.css"
+      ],
+      "js": [
+        "FileSaver.js",
+        "common.js",
+        "handviewer.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.bridgebase.com/v3/*"
+      ],
+      "css": [
+        "global.css"
+      ],
+      "js": [
+        "common.js",
+        "bbov3.js",
+        "FileSaver.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "*://webutil.bridgebase.com/v2/tview.php*"
+      ],
+      "js": [
+        "tview.js"
+      ],
+      "css": [
+        "tview.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "storage",
+    "unlimitedStorage",
+    "https://webutil.bridgebase.com/*",
+    "https://dds.bridgewebs.com/bsol2/*",
+    "https://dds.bridgewebs.com/cgi-bin/bsol2/*"
+  ],
+  "page_action": {
+    "default_icon": {
+      "19": "icons/B++19.png",
+      "38": "icons/B++38.png"
+    },
+    "default_title": "BBO Helper",
+    "default_popup": "popupmenu.html",
+    "show_matches": [
+      "*://www.bridgebase.com/v3/*",
+      "*://www.bridgebase.com/tools/handviewer.html*",
+      "*://www.bridgebase.com/myhands/hands.php?traveller=*",
+      "*://www.bridgebase.com/myhands/hands.php?username=*",
+      "*://webutil.bridgebase.com/v2/tview.php*"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true,
+    "chrome_style": true
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "web_accessible_resources": [
+    "injectedbbo.js",
+    "buttons/*.png",
+    "images/*.png",
+    "sesshands/*"
+  ]
+}
