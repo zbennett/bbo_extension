@@ -681,9 +681,9 @@ function calculateBonus(bid, vul) {
   console.log("overtricks", overtricks);
 
   if (bid.level == 7) {
-    vul ? score + 1500 : 1000;
+    vul ? (score += 1500) : (score += 1000);
   } else if (bid.level == 6) {
-    vul ? score + 750 : 500;
+    vul ? (score += 750) : (score += 500);
   }
 
   if (overtricks <= 0) return score;
