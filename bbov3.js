@@ -759,7 +759,7 @@ function parseBid(bidToParse) {
     returnBid.suit = "S";
   } else if (bidToParse.charAt(0) == "♦") {
     returnBid.suit = "D";
-  } else if (bidToParse.charAt(0) == "♣️") {
+  } else if (bidToParse.charAt(0) == "♣️" || bidToParse.charAt(0) == "♣") {
     returnBid.suit = "C";
   } else if (bidToParse.charAt(0) == "♥") {
     returnBid.suit = "H";
