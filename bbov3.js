@@ -117,6 +117,10 @@ var _NS_LEG = 0;
 var _EW_LEG = 0;
 var _NS_RUBBER_COUNT = 0;
 var _EW_RUBBER_COUNT = 0;
+var _CUR_NS_RUBBER_SCORE = 0;
+var _CUR_EW_RUBBER_SCORE = 0;
+var _EW_RUBBER_SCORES = [];
+var _NS_RUBBER_SCORES = [];
 
 // User can request a specific language for the BBO interface, e.g. Danish with
 // https://www.bridgebase.com/v3/?lang=da, otherwise it will use the primary language
@@ -453,6 +457,10 @@ function loadMiddleSection(d) {
   _EW_LEG = 0;
   _NS_RUBBER_COUNT = 0;
   _EW_RUBBER_COUNT = 0;
+  _CUR_EW_RUBBER_SCORE = 0;
+  _CUR_NS_RUBBER_SCORE = 0;
+  _NS_RUBBER_SCORES = [];
+  _NS_RUBBER_SCORES = [];
   var score_div;
   var leftclassdiv;
   var lastHandEW = 0;
@@ -501,17 +509,21 @@ function loadMiddleSection(d) {
     if (curBid.bidder == "N" || curBid.bidder == "S") {
       if (curRubberPoints < 0) {
         _EW_RUBBER_POINTS += Math.abs(curRubberPoints);
+        _CUR_EW_RUBBER_SCORE += Math.abs(curRubberPoints);
         lastHandEW = Math.abs(curRubberPoints);
       } else {
         _NS_RUBBER_POINTS += curRubberPoints;
+        _CUR_NS_RUBBER_SCORE += curRubberPoints;
         lastHandNS = curRubberPoints;
       }
     } else {
       if (curRubberPoints < 0) {
         _NS_RUBBER_POINTS += Math.abs(curRubberPoints);
+        _CUR_NS_RUBBER_SCORE += Math.abs(curRubberPoints);
         lastHandNS = Math.abs(curRubberPoints);
       } else {
         _EW_RUBBER_POINTS += curRubberPoints;
+        _CUR_EW_RUBBER_SCORE += curRubberPoints;
         lastHandEW = curRubberPoints;
       }
     }
@@ -563,6 +575,27 @@ function loadMiddleSection(d) {
     '</td><td style= "border: 1px solid; text-align: center;">' +
     _EW_RUBBER_COUNT +
     "</td></tr>";
+  for (let index = 0; index < _NS_RUBBER_COUNT + _EW_RUBBER_COUNT; index++) {
+    table +=
+      "<tr>" +
+      '<td style = "border: 1px solid;">Rubber ' +
+      (parseInt(index) + 1) +
+      ': </td><td style = "border: 1px solid; text-align: center;">' +
+      _NS_RUBBER_SCORES[index] +
+      '</td><td style= "border: 1px solid; text-align: center;">' +
+      _EW_RUBBER_SCORES[index] +
+      "</td></tr>";
+  }
+  if (_CUR_EW_RUBBER_SCORE != 0 || _CUR_NS_RUBBER_SCORE != 0) {
+    table +=
+      "<tr>" +
+      '<td style = "border: 1px solid;">Current Rubber: ' +
+      '</td><td style = "border: 1px solid; text-align: center;">' +
+      _CUR_NS_RUBBER_SCORE +
+      '</td><td style= "border: 1px solid; text-align: center;">' +
+      _CUR_EW_RUBBER_SCORE +
+      "</td></tr>";
+  }
   table += "</table>";
   console.log("NS Points", _NS_RUBBER_POINTS);
   console.log("EW Points", _EW_RUBBER_POINTS);
@@ -570,6 +603,8 @@ function loadMiddleSection(d) {
   console.log("EW Legs", _EW_LEG);
   console.log("NS Vul", _NS_VUL);
   console.log("EW_Vul", _EW_VUL);
+  console.log("EW_RUbber_ARray", _EW_RUBBER_SCORES);
+  console.log("NS_RUbber_ARray", _NS_RUBBER_SCORES);
   console.log(d);
 
   score_div.innerHTML =
@@ -706,13 +741,21 @@ function calculateVul(bid, rubberScore) {
       if (_NS_VUL == true) {
         if (_EW_VUL == true) {
           _NS_RUBBER_POINTS += 500;
+          _CUR_NS_RUBBER_SCORE += 500;
 
           console.log("500 point rubber");
         } else {
           _NS_RUBBER_POINTS += 700;
+          _CUR_NS_RUBBER_SCORE += 700;
           console.log("700 point rubber");
         }
         _NS_RUBBER_COUNT++;
+        _NS_RUBBER_SCORES[_NS_RUBBER_COUNT + _EW_RUBBER_COUNT - 1] =
+          _CUR_NS_RUBBER_SCORE;
+        _EW_RUBBER_SCORES[_NS_RUBBER_COUNT + _EW_RUBBER_COUNT - 1] =
+          _CUR_EW_RUBBER_SCORE;
+        _CUR_EW_RUBBER_SCORE = 0;
+        _CUR_NS_RUBBER_SCORE = 0;
         _NS_VUL = false;
         _EW_VUL = false;
       } else {
@@ -729,12 +772,20 @@ function calculateVul(bid, rubberScore) {
       if (_EW_VUL == true) {
         if (_NS_VUL == true) {
           _EW_RUBBER_POINTS += 500;
+          _CUR_EW_RUBBER_SCORE += 500;
           console.log("500 point rubber");
         } else {
           _EW_RUBBER_POINTS += 700;
+          _CUR_EW_RUBBER_SCORE += 700;
           console.log("700 point rubber");
         }
         _EW_RUBBER_COUNT++;
+        _NS_RUBBER_SCORES[_NS_RUBBER_COUNT + _EW_RUBBER_COUNT - 1] =
+          _CUR_NS_RUBBER_SCORE;
+        _EW_RUBBER_SCORES[_NS_RUBBER_COUNT + _EW_RUBBER_COUNT - 1] =
+          _CUR_EW_RUBBER_SCORE;
+        _CUR_EW_RUBBER_SCORE = 0;
+        _CUR_NS_RUBBER_SCORE = 0;
         _NS_VUL = false;
         _EW_VUL = false;
       } else {
